@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusLock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #0b0f29;
+            color: white;
+            width: 240px;
+            padding: 10px;
+        }
+        .card {
+            width: 220px;
+            padding: 15px;
+            background: #1c1f2e;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(151, 65, 252, 0.2);
+            margin: auto;
+        }
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            background: #2a2d42;
+            color: white;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #startBlock {
+            background: #5B42F3;
+            color: white;
+        }
+        #startBlock:hover {
+            background: #AF40FF;
+        }
+        #viewStats {
+            background: #00DDEB;
+            color: white;
+        }
+        #viewStats:hover {
+            background: #00B5C9;
+        }
+        .stats {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>FocusLock</h2>
+    <div class="card">
+        <p>Block distractions for:</p>
+        <input type="number" id="timeInput" placeholder="Enter minutes" min="1">
+        <button id="startBlock">Start Focus Mode</button>
+        <button id="viewStats">View Stats</button>
+        <div class="stats" id="statsDisplay"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
